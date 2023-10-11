@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="root"><button id="button-click">click!</button></div>
+  <script>
+
+    const buttonClick = document.getElementById('root');
+    root.style.width = '100vw';
+    root.style.height = '500vh'
+    buttonClick.addEventListener('wheel', event => {
+      console.log(event);
+      if(event.deltaY > 0) {
+        console.log("yaho")
+      } else {
+        console.log('메롱')
+      }
+    })
+  </script>
+</body>
+</html>
